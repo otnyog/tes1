@@ -1,0 +1,315 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+font-family: Playfair display;
+margin:0;
+background:#FAF7F2;
+color:#3b2a21;
+}
+
+.container{
+width:1200px;
+margin:auto;
+}
+
+/* NAVBAR */
+
+.navbar{
+background:#3b2a21;
+color:white;
+padding: 24px 0;
+border-bottom: 4px solid #C9A24D;
+}
+
+.nav-content{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav a{
+color: #FAF7F2;
+text-decoration:none;
+padding: 0 15px;
+border-right: 2px solid #C9A24D;
+}
+
+nav a:hover{
+    color: #a17662;
+}
+.nav-text a:last-child{
+    border-right: none;
+}
+
+/* HERO */
+
+.hero{
+padding:40px 0;
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.hero img{
+width:100%;
+border-radius:10px;
+}
+
+.hero h1{
+font-size:36px;
+margin-bottom:20px;
+}
+
+.hero-btn{
+margin-top:20px;
+}
+
+.btn-primary{
+background:#7a4b35;
+color:white;
+padding:12px 20px;
+border: 2px solid #7a4b35;
+margin-right:10px;
+cursor:pointer;
+border-radius: 6px;
+font-weight: 600;
+}
+
+.btn-primary:hover{
+    background: #FAF7F2;
+    color: #7a4b35;
+    border: 2px solid #7a4b35;
+    font-weight: 600;
+}
+
+.btn-outline{
+border:2px solid #7a4b35;
+background:#FAF7F2;
+color: #3b2a21;
+padding:12px 20px;
+cursor:pointer;
+border-radius: 6px;
+font-weight: 600;
+}
+
+.btn-outline:hover{
+    background: #7a4b35;
+    color: #FAF7F2;
+    font-weight: 600;
+}
+
+/* LAYANAN */
+
+.layanan{
+text-align:center;
+padding:40px 60px;
+}
+
+.layanan-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:#fcf4eb;
+padding:30px;
+border:2px solid #C9A24D;
+border-radius:10px;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+
+.card button{
+background: #FAF7F2;
+margin-top:12px;
+padding:8px 32px;
+border: 2px solid #C9A24D;
+border-radius: 8px;
+font-weight: 500;
+}
+
+.card button:hover{
+    background: #e7d19f;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+}
+
+/* KEUNGGULAN */
+
+.keunggulan{
+background:#3b2a21;
+color: #FAF7F2;
+padding:32px 0;
+text-align:center;
+border-top: 4px solid #C9A24D;
+border-bottom: 4px solid #C9A24D;
+}
+
+/* GALERI */
+
+.galeri{
+padding:32px 0;
+text-align:center;
+}
+
+.galeri-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+margin-top:10px;
+padding: 0 60px;
+}
+
+.galeri img{
+width:100%;
+border-radius:8px;
+border: 2px solid #C9A24D;
+}
+
+
+/* CTA */
+
+.cta{
+background:#3b2a21;
+color:white;
+text-align:center;
+padding: 16px;
+position: sticky;
+bottom: 0;
+text-align: center;
+border-top-left-radius: 16px;
+border-top-right-radius: 16px;
+}
+
+/* PAKET */
+
+/* Container pembungkus agar 3 paket rapi ke bawah */
+.container-paket {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Jarak antar kotak paket */
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Kotak Utama Paket */
+.paket {
+  display: flex;
+  align-items: center;
+  background-color: #fcf4eb; /* Warna krem sesuai gambar */
+  border: 2px solid #C9A24D;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Bagian Gambar */
+.paket-image {
+  flex: 0 0 160px; /* Ukuran tetap lebar gambar */
+  height: 160px;
+}
+
+.paket-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  opacity: 0.85;
+}
+
+/* Bagian Teks Tengah */
+.paket-content {
+  flex: 1;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.paket-title {
+  font-family: 'Serif', Georgia, serif;
+  color: #4a3728;
+  margin-bottom: 12px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.paket-text {
+  font-family: 'Serif', Georgia, serif;
+  color: #6d5b4e;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Bagian Tombol Kanan */
+.paket-action {
+  flex: 0 0 220px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-info {
+  text-decoration: none;
+  color: #d4a373;
+  border: 1.5px solid #d4a373;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-info:hover {
+  background-color: #d4a373;
+  color: white;
+}
+
+/* Responsif: Jika dibuka di layar HP */
+@media (max-width: 768px) {
+  .paket {
+    flex-direction: column; /* Gambar, teks, tombol jadi berurutan ke bawah */
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  .paket-content {
+    padding: 20px 0;
+  }
+
+  .paket-image {
+    flex: 0 0 200px;
+    width: 100%;
+  }
+}
+
+/* FOOTER */
+
+.footer{
+background:#3b2a21;
+color:white;
+padding:40px 0;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+}
+
+.bottom button {
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+}
