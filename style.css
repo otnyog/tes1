@@ -23,10 +23,31 @@ padding: 24px 0;
 border-bottom: 4px solid #C9A24D;
 }
 
-.nav-content{
-display:flex;
-justify-content:space-between;
-align-items:center;
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
 
 nav a{
